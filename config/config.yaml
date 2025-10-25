@@ -1,0 +1,20 @@
+model:
+  predictor_path: "models/shape_predictor_68_face_landmarks.dat"
+  confidence_threshold: 0.5
+  max_faces: 1
+
+processing:
+  resize_width: 500
+  clone_method: 1  # cv2.NORMAL_CLONE
+  border_mode: 4   # cv2.BORDER_REFLECT_101
+  quality: 95
+
+ui:
+  theme: "light"
+  show_landmarks: false
+  show_triangles: false
+  auto_save: true
+
+log_level: "INFO"
+output_dir: "output"
+temp_dir: "temp"
